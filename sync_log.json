@@ -1,1 +1,9 @@
-﻿{"syncs": []}
+{
+  "syncs": [
+    {
+      "timestamp": "2026-04-08T06:00:13.240900",
+      "message": "Test sync",
+      "updated_by": "emanuele"
+    }
+  ]
+}
