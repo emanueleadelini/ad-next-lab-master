@@ -1,0 +1,532 @@
+{
+  "_schema_version": "3.1.0",
+  "_description": "AD Next Lab Master Context - Complete coordination system for all AIs, projects, business, and operational protocols",
+  
+  "last_updated": "2026-04-07T16:00:00Z",
+  "updated_by": "emanuele_claude_expansion",
+  "version": "3.1.1",
+  
+  "meta": {
+    "repository": "https://github.com/emanueleadelini/ad-next-lab-master",
+    "raw_base_url": "https://raw.githubusercontent.com/emanueleadelini/ad-next-lab-master/main",
+    "sync_frequency_minutes": 30,
+    "coordinator": "EMAMind v2"
+  },
+  
+  "priority_stack": [
+    {
+      "id": "P0",
+      "task": "AGENTI-0 v2 Steps 6-12 (output generator → production)",
+      "status": "in_progress",
+      "assigned_to": "MAIN (Qwen 3.6 Plus)",
+      "blocker": null,
+      "protocol": "protocols/ninja_execution_protocol.md"
+    },
+    {
+      "id": "P1",
+      "task": "Nexus Guard cloud worker + Redis setup",
+      "status": "blocked",
+      "assigned_to": "AGENT (GLM-4.7)",
+      "blocker": "Needs Hetzner W-2295 activation",
+      "protocol": "workflows/deploy_checklist.md"
+    },
+    {
+      "id": "P2",
+      "task": "Ema Cops SaaS interface",
+      "status": "ready",
+      "assigned_to": "CODER (Kimi K2.5)",
+      "blocker": null,
+      "protocol": "protocols/ninja_coder_bible_v3.2.md"
+    }
+  ],
+  
+  "active_projects": {
+    "in_build": [
+      {
+        "name": "AGENTI-0 v2",
+        "description": "Document-only orchestration engine",
+        "status": "Steps 1-5.5 complete, Steps 6-12 pending",
+        "next_action": "Build output generator",
+        "github": null,
+        "tech_stack": ["Python", "Pydantic", "FastAPI", "Telegram"],
+        "revenue_potential": "€49-99/mo",
+        "architecture_doc": "architecture/portable_first.md",
+        "protocols_required": [
+          "protocols/ninja_coder_bible_v3.2.md",
+          "protocols/ninja_execution_protocol.md"
+        ]
+      },
+      {
+        "name": "Nexus Douce",
+        "description": "Built on Goose open source",
+        "status": "Code complete, needs SaaS wrapper",
+        "next_action": "Add authentication + billing",
+        "github": "emanueleadelini/nexus-douce",
+        "tech_stack": ["Goose", "Python"],
+        "revenue_potential": "€79/mo",
+        "protocols_required": [
+          "protocols/ninja_security_backup_v1.0.md",
+          "workflows/deploy_checklist.md"
+        ]
+      },
+      {
+        "name": "EMAMind v2",
+        "description": "Full digital twin managing clients, ads, SaaS",
+        "status": "KB foundation complete, WhatsApp/Gmail next",
+        "next_action": "Build editorial automation",
+        "github": null,
+        "tech_stack": ["Python", "n8n", "Nanobot", "Twilio"],
+        "revenue_potential": "Internal use",
+        "kb_layers": ["kb_identity", "kb_business", "kb_codebase", "kb_personal", "kb_integrations"],
+        "protocols_required": [
+          "protocols/bibbia_operativa_v2.2.md",
+          "protocols/ninja_monitoring_v1.0.md"
+        ]
+      }
+    ],
+    "in_production": [
+      {
+        "name": "CutMate",
+        "url": "https://cutmate.vercel.app",
+        "status": "live",
+        "revenue": "0 EUR/month",
+        "users": 0,
+        "tech_stack": ["Next.js", "Railway", "Whisper API", "Claude API"],
+        "next_upgrade": "FFMPEG upgrade + Pro features",
+        "monitoring": "Sentry configured",
+        "protocols_applied": [
+          "protocols/ninja_monitoring_v1.0.md",
+          "workflows/deploy_checklist.md"
+        ]
+      },
+      {
+        "name": "LinkFlow",
+        "url": "https://linkflow.app",
+        "status": "live",
+        "revenue": "0 EUR/month",
+        "users": 0,
+        "pricing": "Free €0 / Starter €9 / Pro €29 / Enterprise €99",
+        "tech_stack": ["Firebase", "Stripe Connect", "Cloud Functions"],
+        "super_admin_uid": "HcmuCfq8YCUPjhRDU5QrJFeXfYK2",
+        "firebase_project": "linkflow-12284",
+        "protocols_applied": [
+          "protocols/firebase_refactor_hardening.md",
+          "protocols/ninja_security_backup_v1.0.md"
+        ]
+      }
+    ]
+  },
+  
+  "communications_agency": {
+    "active_clients": 15,
+    "sectors": ["education", "training"],
+    "monthly_revenue_eur": 12000,
+    "services": [
+      "Editorial plans",
+      "Social media management (Meta, TikTok)",
+      "Google Ads",
+      "Email marketing",
+      "WhatsApp automation"
+    ],
+    "managed_by": "EMAMind v2",
+    "automation_level": "80%",
+    "protocols": [
+      "workflows/client_onboarding.md",
+      "protocols/bibbia_operativa_v2.2.md"
+    ]
+  },
+  
+  "business_metrics": {
+    "saas_mrr_eur": 0,
+    "agency_revenue_eur": 12000,
+    "total_monthly_revenue": 12000,
+    "infrastructure_cost_eur": 85,
+    "net_monthly_eur": 11915,
+    "runway_months": 24,
+    "next_milestone": "First paying SaaS customer",
+    "growth_strategy": "Prima vendi poi investi"
+  },
+  
+  "critical_deadlines": [
+    {
+      "date": "2026-04-15",
+      "task": "Adobe CC elimination - complete AD Creative Studio",
+      "priority": "P3",
+      "status": "in_progress",
+      "components": ["PDF Generator", "Video Promo"],
+      "protocol": "workflows/emergency_response.md"
+    },
+    {
+      "date": "2026-05-01",
+      "task": "Hetzner W-2295 activation",
+      "priority": "P1",
+      "status": "pending",
+      "blocker": "Waiting for Hetzner confirmation"
+    }
+  ],
+  
+  "avengers_stack": {
+    "version": "2.0",
+    "finalized_date": "2026-04-06",
+    "openrouter_dependency": "zero",
+    "documentation": "protocols/avengers_stack_v2.0.md",
+    "models": {
+      "KITT": {
+        "name": "Claude Sonnet 4.6",
+        "role": "CIO - Critical review, architecture, security",
+        "api": "api.anthropic.com",
+        "use_cases": ["critical_bugs", "architecture_decisions", "security_review", "refactoring"],
+        "cost_per_1M_tokens": 3.0
+      },
+      "MAIN": {
+        "name": "Qwen 3.6 Plus",
+        "role": "Primary agentic builder, 1M context",
+        "api": "dashscope-intl.aliyuncs.com",
+        "use_cases": ["primary_development", "complex_builds", "large_context_tasks"],
+        "cost_per_1M_tokens": 0.5
+      },
+      "CODER": {
+        "name": "Kimi K2.5",
+        "role": "Frontend and visual design",
+        "api": "api.moonshot.cn/v1",
+        "use_cases": ["ui_components", "frontend", "visual_design", "react"],
+        "cost_per_1M_tokens": 0.3
+      },
+      "AGENT": {
+        "name": "GLM-4.7",
+        "role": "Terminal, agentic tasks, server ops",
+        "api": "open.bigmodel.cn",
+        "use_cases": ["terminal_commands", "server_setup", "deployment", "devops"],
+        "cost_per_1M_tokens": 0.2
+      },
+      "BULK": {
+        "name": "DeepSeek V3",
+        "role": "Fast and economical",
+        "api": "api.deepseek.com",
+        "use_cases": ["simple_tasks", "quick_iterations", "testing", "prototypes"],
+        "cost_per_1M_tokens": 0.1
+      },
+      "LOCAL": {
+        "name": "Dragon Ball (Qwen/GLM via Ollama)",
+        "role": "Private and offline",
+        "location": "Shadow PC RTX 6000",
+        "use_cases": ["private_data", "offline_work", "experiments", "sensitive_info"],
+        "cost_per_1M_tokens": 0
+      }
+    },
+    "routing_rules": {
+      "simple_task": "BULK",
+      "ui_design": "CODER",
+      "terminal_server": "AGENT",
+      "complex_build": "MAIN",
+      "critical_review": "KITT",
+      "private_sensitive": "LOCAL"
+    },
+    "fallback_chain": ["BULK", "MAIN", "KITT"]
+  },
+  
+  "infrastructure": {
+    "shadow_pc": {
+      "status": "active",
+      "specs": "Quadro RTX 6000 24GB VRAM, Intel Xeon 4.5GHz, 41GB RAM, Windows 11",
+      "cost_monthly_eur": 75,
+      "use": "Dragon Ball local stack, primary production environment",
+      "protocols": ["protocols/protocollo_cloud_v2.0.md"]
+    },
+    "cax21_vps": {
+      "status": "active",
+      "provider": "Hetzner",
+      "location": "europe-west1",
+      "cost_monthly_eur": 10,
+      "use": "n8n orchestrator, Suite services, EMAMind daemon",
+      "services": ["n8n", "emamind-sync daemon", "Nexus Suite"],
+      "monitoring": "UptimeRobot + Sentry"
+    },
+    "hetzner_w2295": {
+      "status": "pending_activation",
+      "specs": "256GB DDR4 ECC, 1TB SSD",
+      "location": "Helsinki HEL1",
+      "cost_monthly_eur": 105,
+      "use": "High-memory workloads, Dragon Ball host"
+    },
+    "total_monthly_cost_eur": "85 (current) or 190 (with W-2295)"
+  },
+  
+  "protocols": {
+    "_description": "All operational protocols - these are THE RULES",
+    "_base_url": "https://raw.githubusercontent.com/emanueleadelini/ad-next-lab-master/main/protocols",
+    
+    "ninja_coder_bible": {
+      "version": "3.2",
+      "file": "ninja_coder_bible_v3.2.md",
+      "url": "protocols/ninja_coder_bible_v3.2.md",
+      "summary": "Portable-first architecture, Firebase isolation, Repository Pattern, dual-mode development (Lite/Full)",
+      "applies_to": ["all_development"],
+      "mandatory": true
+    },
+    
+    "ninja_execution_protocol": {
+      "version": "1.0",
+      "file": "ninja_execution_protocol.md",
+      "url": "protocols/ninja_execution_protocol.md",
+      "summary": "Step1: Claude analyze → Step2: DeepSeek/MAIN implement → Step3: Claude review. Never break existing, never add unrequested features",
+      "applies_to": ["all_builds"],
+      "mandatory": true
+    },
+    
+    "bug_emergency_protocol": {
+      "version": "1.0",
+      "file": "bug_emergency_protocol_v1.0.md",
+      "url": "protocols/bug_emergency_protocol_v1.0.md",
+      "summary": "REGOLA ZERO: non toccare codice finché non capisci. Read logs first, fix minimum, never change 10 things together",
+      "applies_to": ["bug_fixes", "production_issues"],
+      "mandatory": true
+    },
+    
+    "ninja_monitoring": {
+      "version": "1.0",
+      "file": "ninja_monitoring_v1.0.md",
+      "url": "protocols/ninja_monitoring_v1.0.md",
+      "summary": "Sentry su ogni progetto pre-deploy. Classificazione 🔴/🟡/🟢. Post-deploy: verifica flow core + Sentry 15min",
+      "applies_to": ["all_deployments"],
+      "mandatory": true
+    },
+    
+    "ninja_security_backup": {
+      "version": "1.0",
+      "file": "ninja_security_backup_v1.0.md",
+      "url": "protocols/ninja_security_backup_v1.0.md",
+      "summary": "Auth sicura, Firestore rules tested, API validation, secrets in .env only, backup DB 7-14gg retention",
+      "applies_to": ["all_projects"],
+      "mandatory": true
+    },
+    
+    "firebase_refactor_hardening": {
+      "version": "1.0",
+      "file": "firebase_refactor_hardening.md",
+      "url": "protocols/firebase_refactor_hardening.md",
+      "summary": "13-step refactor: isola Firebase in /infrastructure/, Repository Layer, Service Layer, prepare migration",
+      "applies_to": ["existing_firebase_projects"],
+      "mandatory": false
+    },
+    
+    "bibbia_operativa": {
+      "version": "2.2",
+      "file": "bibbia_operativa_v2.2.md",
+      "url": "protocols/bibbia_operativa_v2.2.md",
+      "summary": "Prima vendi poi investi. Problema monetizzabile? MVP≤3gg? Elimino 30%? Post-deploy 24-48h monitoring",
+      "applies_to": ["all_decisions"],
+      "mandatory": true
+    },
+    
+    "protocollo_cloud": {
+      "version": "2.0",
+      "file": "protocollo_cloud_v2.0.md",
+      "url": "protocols/protocollo_cloud_v2.0.md",
+      "summary": "Modello IBRIDO: UI=API veloce, Backend=LLM locale, GPU=on-demand. NON ottimizzare prima di vendere",
+      "applies_to": ["infrastructure_decisions"],
+      "mandatory": true
+    },
+    
+    "avengers_stack_v2": {
+      "version": "2.0",
+      "file": "avengers_stack_v2.0.md",
+      "url": "protocols/avengers_stack_v2.0.md",
+      "summary": "Complete Avengers routing, fallback chains, cost optimization, zero OpenRouter dependency",
+      "applies_to": ["ai_model_selection"],
+      "mandatory": true
+    }
+  },
+  
+  "workflows": {
+    "_description": "Operational workflows - HOW we execute",
+    "_base_url": "https://raw.githubusercontent.com/emanueleadelini/ad-next-lab-master/main/workflows",
+    
+    "build_workflow": {
+      "file": "build_workflow.md",
+      "url": "workflows/build_workflow.md",
+      "summary": "Analisi → Piano → Build → Test → Deploy → Monitor",
+      "steps": [
+        "1. Claude/KITT analyzes requirements",
+        "2. Choose Avenger (BULK/MAIN/CODER/AGENT based on task)",
+        "3. Implement with protocol compliance",
+        "4. Review with Claude/KITT",
+        "5. Deploy with checklist",
+        "6. Monitor Sentry 24-48h"
+      ]
+    },
+    
+    "deploy_checklist": {
+      "file": "deploy_checklist.md",
+      "url": "workflows/deploy_checklist.md",
+      "summary": "Pre-deploy mandatory checks",
+      "checklist": [
+        "✅ Playwright tests pass",
+        "✅ Linter clean",
+        "✅ Firestore rules configured",
+        "✅ Sentry configured",
+        "✅ .env secrets safe",
+        "✅ README/ARCHITECTURE docs updated",
+        "✅ Backup configured"
+      ]
+    },
+    
+    "client_onboarding": {
+      "file": "client_onboarding.md",
+      "url": "workflows/client_onboarding.md",
+      "summary": "Agency client onboarding process",
+      "managed_by": "EMAMind v2"
+    },
+    
+    "emergency_response": {
+      "file": "emergency_response.md",
+      "url": "workflows/emergency_response.md",
+      "summary": "Production emergency response protocol",
+      "protocol_ref": "protocols/bug_emergency_protocol_v1.0.md"
+    }
+  },
+  
+  "architecture": {
+    "_description": "Architectural patterns and decisions",
+    "_base_url": "https://raw.githubusercontent.com/emanueleadelini/ad-next-lab-master/main/architecture",
+    
+    "portable_first": {
+      "file": "portable_first.md",
+      "url": "architecture/portable_first.md",
+      "summary": "All projects must be portable: Repository Pattern, mapper layers (toDomain/toPersistence), 60-day migration target",
+      "mandatory": true
+    },
+    
+    "repository_pattern": {
+      "file": "repository_pattern.md",
+      "url": "architecture/repository_pattern.md",
+      "summary": "Standardized repository pattern with CRUD methods, mapper layers, isolation from provider",
+      "mandatory": true
+    },
+    
+    "firebase_isolation": {
+      "file": "firebase_isolation.md",
+      "url": "architecture/firebase_isolation.md",
+      "summary": "Firebase isolato per progetto in /infrastructure/. Exception: FatturaParse+Match+Guard share firebase-fatture",
+      "mandatory": true
+    },
+    
+    "migration_strategy": {
+      "file": "migration_strategy.md",
+      "url": "architecture/migration_strategy.md",
+      "summary": "60-day target Firebase→PostgreSQL. MIGRATION.md in ogni progetto",
+      "mandatory": true
+    }
+  },
+  
+  "rules_always_active": [
+    "Prima vendi poi investi",
+    "NINJA System: Lite→MVP rapido, Full→production completa",
+    "Firebase isolato per prodotto (exception: FatturaParse+FatturaMatch+NormaGuard)",
+    "60-day migration target Firebase→PostgreSQL",
+    "Commit format: fix|feat|refactor: descrizione",
+    "Branch format: progetto/task-descrizione",
+    "Pre-deploy: Playwright + linter + Firestore Rules + Sentry + docs",
+    "Bug Emergency: read logs first, fix minimum, never change 10 things together",
+    "Repository Pattern obbligatorio per portable-first",
+    "Mapper layers (toDomain/toPersistence) obbligatori",
+    "Sentry on every project before deploy",
+    "NO optimizations before revenue"
+  ],
+  
+  "anti_patterns": {
+    "_description": "Things we NEVER do",
+    "forbidden": [
+      "❌ Deploy without Sentry",
+      "❌ Commit secrets to git",
+      "❌ Break existing functionality without approval",
+      "❌ Add unrequested features",
+      "❌ Optimize before validating product-market fit",
+      "❌ Use Firebase directly in UI components",
+      "❌ Skip pre-deploy checklist",
+      "❌ Fix bugs without reading logs first",
+      "❌ Change 10 things simultaneously",
+      "❌ Use OpenRouter (use direct APIs)",
+      "❌ Buy GPU before proving demand"
+    ]
+  },
+  
+  "recent_decisions": [
+    {
+      "date": "2026-04-07",
+      "decision": "Master Context v3.1 - Full coordination including all protocols and business metrics",
+      "impact": "critical",
+      "reason": "Every AI must know not only WHAT we're doing, but HOW we work",
+      "protocol_refs": ["all"]
+    },
+    {
+      "date": "2026-04-06",
+      "decision": "Avengers Stack v2.0 finalized, zero OpenRouter dependency",
+      "impact": "critical",
+      "reason": "Full control over APIs, cost optimization, reliability",
+      "protocol_ref": "protocols/avengers_stack_v2.0.md"
+    },
+    {
+      "date": "2026-04-05",
+      "decision": "AD Next IDE deployed to Vercel + Railway",
+      "impact": "high",
+      "reason": "Web IDE with Monaco editor, real file tree, integrated terminal"
+    },
+    {
+      "date": "2026-04-03",
+      "decision": "AGENTI-0 v2 redesign: zero internal routing, zero internal approval",
+      "impact": "critical",
+      "reason": "EmaCops handles routing, Forge handles approval, AGENTI focuses on document production"
+    }
+  ],
+  
+  "emamind_configuration": {
+    "version": "2.0",
+    "auto_sync_enabled": true,
+    "sync_frequency_minutes": 30,
+    "push_notification_triggers": [
+      "priority_change",
+      "new_project_added",
+      "critical_bug",
+      "deployment_completed",
+      "infrastructure_change",
+      "protocol_updated",
+      "business_milestone"
+    ],
+    "telegram_chat_id": null,
+    "kb_sync_enabled": true,
+    "kb_layers": [
+      "kb_identity",
+      "kb_business",
+      "kb_codebase",
+      "kb_personal",
+      "kb_integrations"
+    ],
+    "protocols_sync": {
+      "enabled": true,
+      "target_kb_layer": "kb_codebase",
+      "sync_all_protocols": true
+    }
+  },
+  
+  "links": {
+    "cutmate": "https://cutmate.vercel.app",
+    "linkflow": "https://linkflow.app",
+    "ad_next_ide": "https://ad-next-ide.vercel.app",
+    "ad_next_formazione": "https://ad-next-formazione.web.app",
+    "corsieconcorsionline": "https://corsieconcorsionline.it",
+    "github_org": "https://github.com/emanueleadelini",
+    "ad_next_code_repo": "https://github.com/emanueleadelini/ad-next-code"
+  },
+  
+  "sync_metadata": {
+    "schema_version": "3.1.0",
+    "last_manual_review": "2026-04-07",
+    "auto_generated": false,
+    "source": "manual_expansion_v3.1",
+    "includes_protocols": true,
+    "includes_business": true,
+    "includes_workflows": true,
+    "coverage": "100%"
+  }
+}
